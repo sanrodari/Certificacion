@@ -1,6 +1,5 @@
 package com.example.identifiers;
 
-import java.io.Serializable;
 
 public class FinalTest {
 
