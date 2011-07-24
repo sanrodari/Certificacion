@@ -1,4 +1,4 @@
-package com.example.statictest;
+package com.example.firstchapter.statictest;
 
 /**
  * --------Things you can mark as static: 

@@ -1,4 +1,4 @@
-package com.example.accesmembers.classmembersanotherpackage;
+package com.example.firstchapter.accesmembers.classmembersanotherpackage;
 
 public class Neighbor {
 

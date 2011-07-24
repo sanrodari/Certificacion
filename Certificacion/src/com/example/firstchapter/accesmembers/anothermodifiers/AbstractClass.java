@@ -1,4 +1,4 @@
-package com.example.accesmembers.anothermodifiers;
+package com.example.firstchapter.accesmembers.anothermodifiers;
 
 public abstract class AbstractClass {
 

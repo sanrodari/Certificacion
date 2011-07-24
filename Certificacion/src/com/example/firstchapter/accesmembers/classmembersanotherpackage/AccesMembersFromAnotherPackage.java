@@ -1,6 +1,6 @@
-package com.example.accesmembers.classmembersanotherpackage;
+package com.example.firstchapter.accesmembers.classmembersanotherpackage;
 
-import com.example.accesmembers.AccesMembers;
+import com.example.firstchapter.accesmembers.AccesMembers;
 
 public class AccesMembersFromAnotherPackage extends AccesMembers {
 

@@ -1,4 +1,4 @@
-package com.example.variabledeclaration;
+package com.example.firstchapter.variabledeclaration;
 
 /**
  * - Las variable se pueden declarar como de tipos primitivos o como referencia

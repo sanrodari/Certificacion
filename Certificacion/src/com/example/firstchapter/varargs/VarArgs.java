@@ -1,4 +1,4 @@
-package com.example.varargs;
+package com.example.firstchapter.varargs;
 
 /**
  * Solo se puede usar un varagrs por metodo y debe ser el ultimo parametro

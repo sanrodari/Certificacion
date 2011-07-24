@@ -1,4 +1,4 @@
-package com.example.accesmembers;
+package com.example.firstchapter.accesmembers;
 
 /**
  * Para demostrar los posibles accesos a miembros dependiendo de los

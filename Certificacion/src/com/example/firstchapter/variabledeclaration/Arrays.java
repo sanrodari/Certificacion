@@ -1,4 +1,4 @@
-package com.example.variabledeclaration;
+package com.example.firstchapter.variabledeclaration;
 
 public class Arrays {
 
