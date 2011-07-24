@@ -1,4 +1,4 @@
-package com.example.identifiers;
+package com.example.firstchapter.identifiers;
 
 public class IdentifiersTest {
 
