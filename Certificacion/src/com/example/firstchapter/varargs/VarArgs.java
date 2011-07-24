@@ -31,11 +31,25 @@ public class VarArgs {
 		System.out.println("No soy VarArgs");
 	}
 
+	static void doStuff(int y, int... x) {
+		// Este produce un error de ambiguedad cuando entre
+		// doStuff(int...) y doStuff(int y, int...)
+		// con argumentos como doStuff(1, 2, 3) para evitar esto el argumento
+		// debe ser explicitamente un arreglo
+		// Ej: doStuff(1, new int[] { 1, 2, 3 }) invoca doStuff(int y, int...)
+		System.out.println("Este produce un error de ambiguedad");
+	}
+
 	public static void main(String[] args) {
 		doStuff();
 		doStuff(new int[] { 1 });
 		doStuff(new int[] { 1, 2, 3 });
-		doStuff(1, 2, 3);
+
+		// Error de ambiguedad
+		// doStuff(1, 2, 3);
+
+		// Corrige la ambiguedad e invoca doStuff(int y, int...)
+		doStuff(1, new int[] { 1, 2, 3 });
 
 		// Invocacion que da la prelacion sobre doStuff(int)
 		doStuff(1);

@@ -6,7 +6,25 @@ package com.example.firstchapter.classdeclarations;
 // Si es publica tiene q coincidir con el nombre de archivo ej: ClassDeclarationTest.java 
 public final class ClassDeclarationTest {
 
+	// Puede ser publica porque esta enclosed
+	public class AnotherClass {
+	}
+
+	// Puede ser publica porque esta enclosed
+	// Puede ser static porque esta enclosed y no dentro de un metodo
+	static public class StaticAnotherClass {
+	}
+
+	void someMethod() {
+		// NO compila puede ser static porque aunque esta enclosed se encuentra
+		// dentro
+		// de un metodo
+		// static public class StaticAnotherClassInMethod {}
+	}
 }
+
+// NO compila porque solo una clase publica por archivo fuente
+// public AnotherClazz{}
 
 abstract strictfp class ClassDeclarationTestMoficadorDefecto {
 
@@ -21,11 +39,11 @@ final strictfp class MezclasModificadoresNoAcceso1 {
 }
 
 // No compila porq es final o es abstract o ninguno de los dos
-//abstract final strictfp class MezclasModificadoresNoAcceso2 {
+// abstract final strictfp class MezclasModificadoresNoAcceso2 {
 //
-//}
+// }
 
-//NO compila porque solo puede haber una clase publica
-//public class ClassDeclarationTest1 {
+// NO compila porque solo puede haber una clase publica
+// public class ClassDeclarationTest1 {
 //
-//}
+// }
