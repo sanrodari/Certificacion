@@ -3,20 +3,20 @@ Encapsulamiento permite mantener una API o una Interfaz de clase limpia y que pu
 modificable con el tiempo.
 
 Los atributos se deben proteger mediante los modificadores private y protected en
-conjunci髇 con setters y getters para mantener encapsulamiento.
+conjunci贸n con setters y getters para mantener encapsulamiento.
 
 Una de las ventajas del encapsulamiento es permitir modificar la implementacion de 
-una clase sin tener que cambiar el c骴igo que la usa.
+una clase sin tener que cambiar el c贸digo que la usa.
 
 --------Herencia
-* Permite reutilizar c骴igo.
+* Permite reutilizar c贸digo.
 * Permite el polimorfismo.
 
 --------XXX
-* Entre m醩 sea especializado el c骴igo es m醩 problable que se pueda reutilizar.
+* Entre m谩s sea especializado el c贸digo es m谩s problable que se pueda reutilizar.
 * Los metodos abstractos deben ser sobrescritos por las clases concretas.
-* Cuando un m閠odo sobrescibe otro no puede tener un modificador de acceso m醩 
-	restrictivo que el m閠odo que sobrescribe.
+* Cuando un m茅todo sobrescibe otro no puede tener un modificador de acceso m谩s 
+	restrictivo que el m茅todo que sobrescribe.
 	Ej: class Padre{ public void algo()} 
 		class Hijo extends Padre{ protected void algo()} //Esto no compila.
 
@@ -76,3 +76,28 @@ doStuff(String s) method without overriding the superclass version that
 takes an int. So two methods with the same name but in different classes
 can still be considered overloaded, if the subclass inherits one version of the
 method and then declares another overloaded version in its class definition.
+
+-------Alta cohesi贸n y bajo acoplamiento
+
+Principios de un buen dise帽o:
+	* Ease of creation
+	* Ease of maintenance
+	* Ease of enhancement
+
+----Bajo acoplamiento:
+
+Let's start by making an attempt at a definition of coupling. Coupling is the degree
+to which one class knows about another class. If the only knowledge that class A
+has about class B, is what class B has exposed through its interface, then class A and
+class B are said to be loosely coupled鈥hat's a good thing. If, on the other hand,
+class A relies on parts of class B that are not part of class B's interface, then the
+coupling between the classes is tighter鈥ot a good thing. In other words, if A knows
+more than it should about the way in which B was implemented, then A and B are
+tightly coupled.
+
+----Alta cohesi贸n
+The term cohesion is used to indicate the degree to which a class has a single, 
+well-focused purpose. The more focused a class is, the higher its cohesiveness.
+The key benefit of high cohesion is that such classes are typically much easier
+to maintain and this classes with a well-focused purpose tend to be more
+reusable than other classes.
