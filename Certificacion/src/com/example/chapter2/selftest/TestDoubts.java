@@ -14,12 +14,20 @@ public class TestDoubts {
 		public static void main(String[] args) {
 			A[] aa = new A[2];
 			B[] ba = new B[2];
+
+			// Invoca el de sifter(Object) por widening
+			// Primero invoca widening y despues autoboxing o varagrs
+
+			// Widening beats autoboxing and varargs para que sea compatible
+			// hacia atras
+			
+//			Y Autoboxing vence a varagrs
 			sifter(aa);
 			sifter(ba);
 			sifter(7);
 			System.out.println(s);
 		}
-		
+
 		static void sifter(A[]... a2) {
 			s += "1";
 		}
