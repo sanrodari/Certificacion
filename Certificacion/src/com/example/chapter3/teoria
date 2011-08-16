@@ -8,3 +8,8 @@
 	deje el	objeto con una referencia activa desde cualquier Thread (o sea, lo vuelva 
 	a ser alcanzable), despues cuando el vuelva a ser inalcanzable el GC lo elimina sin
 	invocar el finalize.
+	
+* Widening no ocurre entre objetos Wrappers.
+
+* Jerarquia de elecciones entre metodos sobrecargados: Primero widening, despues boxing
+	y por ultimo varargs.

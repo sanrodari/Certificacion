@@ -1,12 +1,32 @@
 package com.example.chapter3;
 
+
 /**
- * Widening no ocurre entre objetos Wrappers
+ * Widening no ocurre entre objetos Wrappers.
  * 
  * @author sanrodari
  * 
  */
 public class TestDoubts {
+	
+	enum Suits{
+		SPADES(9), DIAMONDS(10) {
+			@Override
+			public int getValue(int bid) {
+				return 15;
+			}
+		};
+		
+		private int points;
+		
+		public int getValue(int bid){
+			return points * bid;
+		}
+		
+		Suits(int points) {
+			this.points = points;
+		}
+	}
 
 	static class A {
 	}
@@ -44,6 +64,10 @@ public class TestDoubts {
 			// Si puede primero hacer boxing y despues widening
 			// Boxing a Integer y despues Widening a Object
 			boxingThenWidening(3);
+			
+			System.out.println(Suits.DIAMONDS);
+			
+			System.out.println(Suits.values());
 		}
 
 		static void sifter(A[]... a2) {
