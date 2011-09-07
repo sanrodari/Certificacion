@@ -1,0 +1,15 @@
+* The garbage collector has evolved to such an advanced state that it’s 
+	recommended that you never invoke System.gc() in your code - leave it to the JVM.
+	
+* El System.gc() no puede forzar la ejecucion del garbage collector, se debe enteder 
+	como una peticion o sugerencia a este para ser ejecutado.
+	
+* El metodo finalize solo se ejecuta una vez por el GC, asi sea que en el finalize se 
+	deje el	objeto con una referencia activa desde cualquier Thread (o sea, lo vuelva 
+	a ser alcanzable), despues cuando el vuelva a ser inalcanzable el GC lo elimina sin
+	invocar el finalize.
+	
+* Widening no ocurre entre objetos Wrappers.
+
+* Jerarquia de elecciones entre metodos sobrecargados: Primero widening, despues boxing
+	y por ultimo varargs.
