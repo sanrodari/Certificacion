@@ -1,0 +1,27 @@
+File:
+	Representacion abstracta de un directorio o un archivo.
+	Sirve para realizar operaciones como busqueda, eliminacion y lectura de archivos y directorios.
+
+FileReader
+	Lector de bajo nivel de archivos, hace operaciones con caracteres y cadenas. Usualmente envuelto
+	en un lector de más alto nivel.
+
+BufferReader
+	Es un lector de mas alto nivel que ofrece metodos utiles y ofrece mayor eficiencia.
+
+PrintWriter
+	Para manipulacion de cadenas.
+
+Console
+	Para lectura y escritura de CLI.
+
+
+La deserializacion no incluye la invocacion a constructores (EXCEPTO cuando las superclases no 
+	implementan Serializable, aca si aplica lo de reinicializar los atributos ya que se invoca 
+	el constructor de la primera clase no serializable)	ni inicializa los atributos a sus valores declarados. 
+	Para los transient asigna el valor por defecto para el tipo de dato asi sea que este 
+	inicializado el atributo,
+	 
+	Ej:
+	trasient int integer = 9;
+	Cuando se deserializa no se le da este valor sino el por defecto que es 0.  
