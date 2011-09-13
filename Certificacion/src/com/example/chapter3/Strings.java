@@ -7,7 +7,6 @@ public class Strings {
 		String b = a;
 
 		a = a + " add some words";
-		
 		// b no cambia porque a apunta ahora a un nuevo objeto
 
 		String p1 = "algo";
