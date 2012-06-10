@@ -5,7 +5,8 @@ package com.example.chapter5;
  * logicas que se hacen sean comprobadas.
  * 
  * Se pueden desactivar la comprobacion de los assert en el JVM y seria como si
- * no estuvieran escritas.
+ * no estuvieran escritas: con la opcion -ea						 
+ * 
  */
 public class AssertTest {
 	
